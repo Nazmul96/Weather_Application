@@ -10,8 +10,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
 
     function getWeatherData(location){
-;
-        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=171aa7c1b60314050807da7d7d82bca9`)
+        axios.get(` https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=171aa7c1b60314050807da7d7d82bca9&units=metric`)
         .then(function(response) {
             if(response.data){
 
